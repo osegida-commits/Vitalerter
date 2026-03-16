@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitalerter | Updates</title>
+    <title>Vitalerter | Product Updates & Support</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -13,26 +14,37 @@
             font-family: 'Heebo', sans-serif; 
             color: #3C3E54; 
             background-color: #ffffff; 
+            margin: 0;
+            padding: 0;
         }
 
-        /* Your Three-Tone Gradient */
+        /* Three-Tone Brand Gradient */
         .brand-gradient {
             background: linear-gradient(90deg, #0E7586 0%, #289589 50%, #42B48B 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        /* Button Color #2080A6 - Shadow Removed */
+        /* Flat Button - No Shadow */
         .btn-primary { 
             background-color: #2080A6; 
             box-shadow: none !important; 
+            border: none;
+            color: white;
+            transition: all 0.2s ease;
         }
         .btn-primary:hover { 
             background-color: #1a6d8d; 
+            transform: translateY(-1px);
         }
-        
-        .timeline-line {
-            background: linear-gradient(to bottom, #0E7586, #42B48B);
+
+        .timeline-border {
+            background: linear-gradient(to bottom, #0E7586, #289589, #42B48B);
+        }
+
+        .card-flat {
+            border: 1px solid #f1f5f9;
+            background: #ffffff;
         }
     </style>
 </head>
@@ -41,60 +53,15 @@
     <nav class="sticky top-0 z-50 bg-white border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="Type=No label.svg" alt="Logo" class="h-10 w-auto block" onerror="this.src='https://placehold.co/40x40?text=V'">
+                <img src="logo.svg" alt="Vitalerter Logo" class="h-10 w-auto block">
                 <span class="text-2xl font-extrabold tracking-tight text-[#3C3E54]">Vitalerter</span>
             </div>
             <div class="flex items-center gap-8">
-                <a href="#help" class="text-sm font-bold text-[#3C3E54] hover:text-[#0E7586] transition">Help Center</a>
-                <a href="#" class="btn-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all">Launch App</a>
+                <a href="#help" class="text-sm font-bold text-[#3C3E54] hover:text-[#289589] transition">Help Center</a>
+                <a href="#" class="btn-primary px-6 py-2.5 rounded-lg text-sm font-bold">Launch App</a>
             </div>
         </div>
     </nav>
 
-    <header class="py-20 text-center bg-slate-50/50">
-        <div class="max-w-3xl mx-auto px-6">
-            <h1 class="text-5xl font-extrabold mb-6 leading-tight">What's new in <span class="brand-gradient">Vitalerter</span></h1>
-            <p class="text-lg opacity-80">The latest improvements and system updates.</p>
-        </div>
-    </header>
-
-    <main class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 py-16">
-        
-        <div class="lg:col-span-8 space-y-12">
-            <section class="relative pl-10">
-                <div class="absolute left-0 top-0 bottom-0 w-1 timeline-line opacity-20 rounded-full"></div>
-                <div class="absolute left-[-4.5px] top-2 w-3.5 h-3.5 rounded-full bg-[#289589] border-2 border-white"></div>
-                
-                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="text-[#289589] text-xs font-bold px-3 py-1 bg-[#289589]/10 rounded">v1.0.0</span>
-                        <span class="text-xs font-medium opacity-40">March 16, 2026</span>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold mb-4 text-[#3C3E54]">The Activity Control Update 🚀</h3>
-                    <p class="mb-6 opacity-80 leading-relaxed">We've added 15-minute granularity to all monitoring sessions and fixed UI issues for mobile Safari users.</p>
-                </div>
-            </section>
-        </div>
-
-        <aside class="lg:col-span-4" id="help">
-            <div class="bg-[#3C3E54] p-8 rounded-2xl text-white">
-                <h3 class="text-lg font-bold mb-6">Help Center</h3>
-                <div class="space-y-3">
-                    <a href="#" class="flex items-center justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 transition border border-white/5 text-sm font-medium">
-                        Quick Start Guide <i class="fa-solid fa-chevron-right text-[#42B48B]"></i>
-                    </a>
-                    <a href="#" class="flex items-center justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 transition border border-white/5 text-sm font-medium">
-                        Configuring Alerts <i class="fa-solid fa-chevron-right text-[#42B48B]"></i>
-                    </a>
-                </div>
-            </div>
-        </aside>
-    </main>
-
-    <footer class="py-12 text-center opacity-30 text-xs font-medium uppercase tracking-widest">
-        &copy; 2026 Vitalerter
-    </footer>
-
-</body>
-</html>
+    <header class="py-24 text-center bg-slate-50/40">
+        <div class="
