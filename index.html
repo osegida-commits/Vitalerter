@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalerter | Release Notes & Help Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="text-gray-900">
+    <nav class="sticky top-0 z-50 glass border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold">V</div>
+                <span class="text-xl font-bold tracking-tight">Vitalerter</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
+                <a href="#changelog" class="hover:text-green-600 transition">Release Notes</a>
+                <a href="#help" class="hover:text-green-600 transition">Help Center</a>
+            </div>
+            <a href="https://github.com/osegida-commits/Vitalerter" class="bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-700 transition">GitHub Repo</a>
+        </div>
+    </nav>
+
+    <header class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">What's New in Vitalerter</h1>
+            <p class="text-lg text-gray-600">Follow our latest updates, bug fixes, and helpful guides.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="md:col-span-2 space-y-12" id="changelog">
+            <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-rocket text-green-600"></i> Changelog</h2>
+            
+            <article class="relative pl-8 border-l-2 border-gray-100 pb-4">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-green-600 border-4 border-white"></div>
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded">v1.0.0</span>
+                    <time class="text-sm text-gray-500 font-medium">March 16, 2026</time>
+                </div>
+                <h3 class="text-xl font-bold mb-3">The Activity Control Update</h3>
+                <p class="text-gray-600 mb-4">Initial release with 15-minute granular activity controls and Safari mobile fixes.</p>
+                <div class="bg-gray-100 rounded-xl p-8 text-center text-gray-400 italic border border-dashed border-gray-300">
+                    [ Your Feature Screenshot Here ]
+                </div>
+            </article>
+        </div>
+
+        <aside class="space-y-10" id="help">
+            <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                <h2 class="text-lg font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-circle-question text-green-600"></i> Help Center</h2>
+                <div class="space-y-4 text-sm">
+                    <a href="#" class="block p-3 rounded-xl bg-gray-50 hover:bg-green-50 transition"><b>Getting Started:</b> Set up your first activity</a>
+                    <a href="#" class="block p-3 rounded-xl bg-gray-50 hover:bg-green-50 transition"><b>Safari Tips:</b> Optimizing mobile performance</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
